@@ -405,43 +405,6 @@ void main( void ) {
 
 ";
 
-/*
-// shader from https://www.shadertoy.com/view/Xtf3zn
-static FRAGMENT_SHADER: &'static str = "
-#version 150
-
-uniform vec3        iResolution;
-uniform float       iGlobalTime;
-
-void main(void)
-{
-    vec2 uv = gl_FragCoord.xy / iResolution.xy;
-
-    float m = 0.5;
-    float d1 = sqrt( pow(abs(uv[0]-0.5), 1.25) + pow(abs(uv[1]-0.25), 1.75) );
-    float d2 = sqrt( pow(abs(uv[0]-0.5), 1.25) + pow(abs(uv[1]-0.75), 1.75) );
-    float c1 = sin(d1*iGlobalTime*m) * cos(d2*iGlobalTime*m) * sin(uv[0]*iGlobalTime);
-    float c2 = sin(d1*iGlobalTime*m) * cos(d2*iGlobalTime*m) * sin(uv[1]*iGlobalTime);
-
-    gl_FragColor = vec4(c1, c2, c2, 1.0);
-}
-";
-*/
-/*
-static FRAGMENT_SHADER: &'static str = "
-    #version 150
-
-    uniform vec3        iResolution;
-    uniform float       iGlobalTime;
-
-    void main(void)
-    {
-        float u = gl_FragCoord.x / iResolution.x;
-        gl_FragColor = vec4( vec3( floor( u * 15.0 ) / 15.0), 1.0);
-    }
-";
-*/
-
 #[vertex_format]
 #[derive(Copy)]
 pub struct VertexData {
