@@ -1,0 +1,7 @@
+*~
+.*~
+target/
+*.config
+*.creator*
+*.files
+*.includes

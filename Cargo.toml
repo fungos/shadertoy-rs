@@ -1,0 +1,17 @@
+[package]
+
+name = "shadertoy-rs"
+version = "0.0.1"
+authors = ["Danny Angelo Carminati Grein <fungos@gmail.com>"]
+
+[dependencies.shader-lab-rs]
+git = "https://github.com/fungos/shader-lab-rs"
+
+[dependencies.glium_macros]
+git = "http://github.com/tomaka/glium"
+
+[dependencies.glium]
+git = "http://github.com/tomaka/glium"
+
+[dependencies.cgmath]
+git = "http://github.com/bjz/cgmath-rs"
